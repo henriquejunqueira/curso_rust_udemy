@@ -54,18 +54,33 @@ fn main() {
     // }
 
     // ? Lesson 05: Sum of digits using while
-    let mut soma = 0;
-    let mut valor_entrada = String::new();
-    io::stdin().read_line(&mut valor_entrada).expect("Erro ao ler valor_entrada");
+    // let mut soma = 0;
+    // let mut valor_entrada = String::new();
+    // io::stdin().read_line(&mut valor_entrada).expect("Erro ao ler valor_entrada");
     
-    let mut valor_i32 = convert_to_int(&valor_entrada);
+    // let mut valor_i32 = convert_to_int(&valor_entrada);
 
-    while valor_i32 != 0{
-        let mut r = valor_i32 % 10;
-        soma = soma + r;
-        valor_i32 = valor_i32 / 10;
+    // while valor_i32 != 0{
+    //     let mut r = valor_i32 % 10;
+    //     soma = soma + r;
+    //     valor_i32 = valor_i32 / 10;
+    // }
+
+    // println!("O valor da soma dos dígitos é: {}", soma);
+
+    // ? Lesson 06: Factorial calculation using while
+    let mut entrada_fatorial = String::new();
+    io::stdin().read_line(&mut entrada_fatorial).expect("Erro ao ler entrada_fatorial");
+    
+    let mut fatorial = 1;
+    let mut entrada_int = convert_to_int(&entrada_fatorial);
+
+    while entrada_int > 1{
+        fatorial = fatorial * entrada_int;
+        entrada_int = entrada_int - 1;
     }
 
-    println!("O valor da soma dos dígitos é: {}", soma);
+    println!("O fatorial de {} é: {}", entrada_fatorial, fatorial);
+
 
 }
