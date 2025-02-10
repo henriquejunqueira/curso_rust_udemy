@@ -69,18 +69,36 @@ fn main() {
     // println!("O valor da soma dos dígitos é: {}", soma);
 
     // ? Lesson 06: Factorial calculation using while
-    let mut entrada_fatorial = String::new();
-    io::stdin().read_line(&mut entrada_fatorial).expect("Erro ao ler entrada_fatorial");
+    // let mut entrada_fatorial = String::new();
+    // io::stdin().read_line(&mut entrada_fatorial).expect("Erro ao ler entrada_fatorial");
     
-    let mut fatorial = 1;
-    let mut entrada_int = convert_to_int(&entrada_fatorial);
+    // let mut fatorial = 1;
+    // let mut entrada_int = convert_to_int(&entrada_fatorial);
 
-    while entrada_int > 1{
-        fatorial = fatorial * entrada_int;
-        entrada_int = entrada_int - 1;
+    // while entrada_int > 1{
+    //     fatorial = fatorial * entrada_int;
+    //     entrada_int = entrada_int - 1;
+    // }
+
+    // println!("O fatorial de {} é: {}", entrada_fatorial, fatorial);
+
+    // ? Lesson 07: Checking how many students remained in recovery using while
+    let mut medias = String::new();
+    io::stdin().read_line(&mut medias).expect("Erro ao ler medias");
+
+    let mut soma_rec = 0;
+    let mut i = 0;
+
+    while convert_to_int(&medias) > i{
+        let mut media_aluno = String::new();
+        io::stdin().read_line(&mut media_aluno).expect("Erro ao ler media_aluno");
+        i += 1;
+        
+        if convert_to_int(&media_aluno) >= 3 && convert_to_int(&media_aluno) < 6{
+            soma_rec += 1;
+        }
     }
 
-    println!("O fatorial de {} é: {}", entrada_fatorial, fatorial);
-
+    println!("O número de alunos em recuperação é {}", soma_rec);
 
 }

@@ -133,6 +133,8 @@
   - Como read_line retorna um Result, expect("Erro ao ler number1") é usado para lidar com erros.
   - Se a leitura falhar, o programa será encerrado com a mensagem de erro.
 
+---
+
 #### Revisando todo o código
 
 ```rust
@@ -174,6 +176,8 @@ fn main() {
     }
 }
 ```
+
+---
 
 ### Revisando código fatorial:
 
@@ -221,3 +225,5 @@ fn main() {
 - entrada_int = entrada_int - 1; Diminui o valor de entrada_int em 1.
 
 - println!("O fatorial eh {}", fatorial); Imprime a mensagem "O fatorial é" seguida pelo valor atual de fatorial.
+
+---
