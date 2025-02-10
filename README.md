@@ -1,4 +1,4 @@
-# Curso Programação Rust Completo : do Zero ao Pleno! (2025)
+# Repositório do curso Programação Rust Completo : do Zero ao Pleno! (2025)
 
 ### Configurando o ambiente:
 
