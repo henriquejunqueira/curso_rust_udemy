@@ -1,0 +1,20 @@
+# Diretórios de build
+target/
+
+# Arquivo Cargo.lock (se for uma biblioteca, mantenha)
+Cargo.lock
+
+# Diretórios de configuração do editor
+.vscode/
+.idea/
+.cargo/
+
+# Arquivos de backup
+*.rs.bk
+
+# Arquivos temporários do editor
+*.swp
+
+# Arquivos específicos do sistema operacional
+*.DS_Store
+Thumbs.db
