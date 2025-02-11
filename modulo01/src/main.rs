@@ -1,14 +1,29 @@
-use core::num;
+// use core::num;
 // ? Lesson 04
-use std::io; // library used for the user to use the data entry input
+// use std::io; // library used for the user to use the data entry input
 
 // create a function
-fn convert_to_int(data_input: & String) -> i32{
-    let x = data_input.trim().parse::<i32>().unwrap();
-    x
-}
+// fn convert_to_int(data_input: & String) -> i32{
+//     let x = data_input.trim().parse::<i32>().unwrap();
+//     x
+// }
 
 // ? End lesson 04
+
+// ? Lesson 08
+fn dobro(num: i32) -> i32{
+    return 2 * num;
+}
+
+fn maior(a: i32, b: i32) -> i32{
+    if a >= b{
+        return a;
+    }else{
+        return b;
+    }
+}
+
+// ? End lesson 08
 
 fn main() {
     // ? Lesson 01: variables
@@ -102,16 +117,20 @@ fn main() {
     // println!("O número de alunos em recuperação é {}", soma_rec);
 
     // ? Exercise: Greatest common divisor using while
-    let mut a = 15;
-    let mut b = 40;
+    // let mut a = 15;
+    // let mut b = 40;
 
     // As long as b is nonzero, the while loop continues
-    while b != 0{
-        let temp = b; // stores the smaller value of the two variables in the temp variable
-        b = a % b; // stores the remainder of dividing the largest value by the smallest
-        a = temp; // stores the smallest value in temp in the variable a 
-    }
+    // while b != 0{
+    //     let temp = b; // stores the smaller value of the two variables in the temp variable
+    //     b = a % b; // stores the remainder of dividing the largest value by the smallest
+    //     a = temp; // stores the smallest value in temp in the variable a 
+    // }
 
-    println!("O maior divisor comum entre 15 e 40 é: {}", a);
+    // println!("O maior divisor comum entre 15 e 40 é: {}", a);
+
+    // ? Lesson 08: Functions part 1
+    // println!("O dobro do número 5 é {}", dobro(5));
+    println!("O maior número entre 5 e 4 é {}", maior(5, 4));
 
 }
