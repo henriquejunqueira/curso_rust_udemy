@@ -33,15 +33,15 @@
 // ? End lesson 09
 
 // ? Lesson 10: Functions part 3
-fn alguma_fn(par_a: f32, par_b: i128) -> f32{
-    println!("Essa função devolve um valor flutuante");
+// fn alguma_fn(par_a: f32, par_b: i128) -> f32{
+//     println!("Essa função devolve um valor flutuante");
     // 10 as f32 // converts type from integer to float
     // let x = 10.1 * par_a;
     // let x = 10.1 * par_a + par_b; // error
     // let x = 10.1 * par_a + par_b as f32;
-    let x = 10.1f32 * par_a + par_b as f32;
-    x
-}
+//     let x = 10.1f32 * par_a + par_b as f32;
+//     x
+// }
 // ? End lesson 10
 
 fn main() {
@@ -151,5 +151,31 @@ fn main() {
     // ? Lesson 08: Functions part 1
     // println!("O dobro do número 5 é {}", dobro(5));
     // println!("O maior número entre 5 e 4 é {}", maior(5, 4));
+
+    // ? Lesson 11: Introduction to for
+
+    // Create a range from 20 to 29 (30 is excluded)
+    // let faixa = 20..30;
+
+    // Loop through the range 1 to 9 (exclusive of 10)
+    // for i in 1..10{
+         // Print the current value of i
+    //     println!("O número está variando entre {}", i);
+    // }
+
+    // Iterate through each number in the range
+    // for i in faixa{
+        // Print the current number in the loop
+    //     println!("O número está variando entre {}", i);
+    // }
+
+    // Create a vector containing a list of animals
+    let animais = vec!["Coelho", "Gato", "Macaco"];
+
+    // Iterate through each element in the vector
+    for a in animais{
+        // Print the current animal in the loop
+        println!("O animal a seguir é o {}", a);
+    }
 
 }
