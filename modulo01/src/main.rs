@@ -25,6 +25,13 @@ fn maior(a: i32, b: i32) -> i32{
 
 // ? End lesson 08
 
+// ? Lesson 09: Functions part 2
+fn alguma_fn(par_a: f32, par_b: i128) -> f32{
+    println!("Essa função devolve um valor flutuante");
+    10.1
+}
+// ? End lesson 09
+
 fn main() {
     // ? Lesson 01: variables
     // let name = "Henrique"; // variable declaration
@@ -131,6 +138,6 @@ fn main() {
 
     // ? Lesson 08: Functions part 1
     // println!("O dobro do número 5 é {}", dobro(5));
-    println!("O maior número entre 5 e 4 é {}", maior(5, 4));
+    // println!("O maior número entre 5 e 4 é {}", maior(5, 4));
 
 }

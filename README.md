@@ -179,7 +179,7 @@ fn main() {
 
 ---
 
-### Revisando código fatorial:
+#### Código fatorial:
 
 ```rust
 use std::io;
@@ -225,5 +225,33 @@ fn main() {
 - entrada_int = entrada_int - 1; Diminui o valor de entrada_int em 1.
 
 - println!("O fatorial eh {}", fatorial); Imprime a mensagem "O fatorial é" seguida pelo valor atual de fatorial.
+
+---
+
+#### Função Parte 1
+
+```rust
+fn dobro(num: i32) -> i32{
+    return 2*num;
+}
+
+fn maior(a: i32, b: i32) -> i32
+{
+    if a >= b{
+        return a
+    } else{
+        return b;
+    }
+}
+fn main() {
+
+    println!("O maior numero entre 5 e 4 eh {}", maior(5,4) );
+}
+```
+
+- O código acima tem três funções: dobro, maior e main.
+- A função dobro tem como parâmetro um inteiro chamado "num" e retorna o dobro desse número, multiplicando-o por 2.
+- A função maior tem como parâmetros dois inteiros, "a" e "b". Ela compara os dois números e retorna o maior deles. Se "a" for maior ou igual a "b", retorna "a". Caso contrário, retorna "b".
+- A função main é a função principal do código. Ela é executada automaticamente quando o código é rodado. Nela, é chamada a função maior, passando os números 5 e 4 como parâmetros. O resultado da chamada da função é impresso na tela com a mensagem "O maior número entre 5 e 4 é 5".
 
 ---
