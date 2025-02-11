@@ -83,22 +83,35 @@ fn main() {
     // println!("O fatorial de {} é: {}", entrada_fatorial, fatorial);
 
     // ? Lesson 07: Checking how many students remained in recovery using while
-    let mut medias = String::new();
-    io::stdin().read_line(&mut medias).expect("Erro ao ler medias");
+    // let mut medias = String::new();
+    // io::stdin().read_line(&mut medias).expect("Erro ao ler medias");
 
-    let mut soma_rec = 0;
-    let mut i = 0;
+    // let mut soma_rec = 0;
+    // let mut i = 0;
 
-    while convert_to_int(&medias) > i{
-        let mut media_aluno = String::new();
-        io::stdin().read_line(&mut media_aluno).expect("Erro ao ler media_aluno");
-        i += 1;
+    // while convert_to_int(&medias) > i{
+    //     let mut media_aluno = String::new();
+    //     io::stdin().read_line(&mut media_aluno).expect("Erro ao ler media_aluno");
+    //     i += 1;
         
-        if convert_to_int(&media_aluno) >= 3 && convert_to_int(&media_aluno) < 6{
-            soma_rec += 1;
-        }
+    //     if convert_to_int(&media_aluno) >= 3 && convert_to_int(&media_aluno) < 6{
+    //         soma_rec += 1;
+    //     }
+    // }
+
+    // println!("O número de alunos em recuperação é {}", soma_rec);
+
+    // ? Exercise: Greatest common divisor using while
+    let mut a = 15;
+    let mut b = 40;
+
+    // As long as b is nonzero, the while loop continues
+    while b != 0{
+        let temp = b; // stores the smaller value of the two variables in the temp variable
+        b = a % b; // stores the remainder of dividing the largest value by the smallest
+        a = temp; // stores the smallest value in temp in the variable a 
     }
 
-    println!("O número de alunos em recuperação é {}", soma_rec);
+    println!("O maior divisor comum entre 15 e 40 é: {}", a);
 
 }
