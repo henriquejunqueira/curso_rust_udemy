@@ -11,26 +11,38 @@
 // ? End lesson 04
 
 // ? Lesson 08
-fn dobro(num: i32) -> i32{
-    return 2 * num;
-}
+// fn dobro(num: i32) -> i32{
+//     return 2 * num;
+// }
 
-fn maior(a: i32, b: i32) -> i32{
-    if a >= b{
-        return a;
-    }else{
-        return b;
-    }
-}
+// fn maior(a: i32, b: i32) -> i32{
+//     if a >= b{
+//         return a;
+//     }else{
+//         return b;
+//     }
+// }
 
 // ? End lesson 08
 
 // ? Lesson 09: Functions part 2
+// fn alguma_fn(par_a: f32, par_b: i128) -> f32{
+//     println!("Essa função devolve um valor flutuante");
+//     10.1
+// }
+// ? End lesson 09
+
+// ? Lesson 10: Functions part 3
 fn alguma_fn(par_a: f32, par_b: i128) -> f32{
     println!("Essa função devolve um valor flutuante");
-    10.1
+    // 10 as f32 // converts type from integer to float
+    // let x = 10.1 * par_a;
+    // let x = 10.1 * par_a + par_b; // error
+    // let x = 10.1 * par_a + par_b as f32;
+    let x = 10.1f32 * par_a + par_b as f32;
+    x
 }
-// ? End lesson 09
+// ? End lesson 10
 
 fn main() {
     // ? Lesson 01: variables
